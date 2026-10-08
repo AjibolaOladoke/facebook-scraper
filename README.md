@@ -2,7 +2,7 @@
 
 ## Images
 
-[![facebook-scraper](https://opengraph.githubassets.com/1/https://github.com/kevinzg/facebook-scraper)](https://www.swifttechco.com)
+[![facebook-scraper](https://opengraph.githubassets.com/1/kevinzg/facebook-scraper)](https://www.swifttechco.com)
 
 
 [![PyPI download month](https://img.shields.io/pypi/dm/facebook-scraper.svg)](https://swifttechco.com)
