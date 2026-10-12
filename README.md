@@ -1,20 +1,12 @@
-# Facebook Scraper
+# facebook-scraper
+
+## What This Is
+
+A practical reference entry for product and engineering: the facebook-scraper notes, examples and fixes we reach for repeatedly. Kept current as part of the wider Swift Tech Co. engineering library.
 
 ## Images
 
-[![facebook-scraper](https://opengraph.githubassets.com/1/kevinzg/facebook-scraper)](https://www.swifttechco.com)
-
-
-[![PyPI download month](https://img.shields.io/pypi/dm/facebook-scraper.svg)](https://swifttechco.com)
-[![PyPI download week](https://img.shields.io/pypi/dw/facebook-scraper.svg)](https://swifttechco.com)
-[![PyPI download day](https://img.shields.io/pypi/dd/facebook-scraper.svg)](https://swifttechco.com)
-
-[![PyPI version](https://img.shields.io/pypi/v/facebook-scraper?color=blue)](https://swifttechco.com)
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/facebook-scraper.svg)](https://swifttechco.com)
-[![GitHub commits since tagged version](https://img.shields.io/github/commits-since/kevinzg/facebook-scraper/v0.2.59)](https://swifttechco.com)
-
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://swifttechco.com)
-
+[![facebook-scraper](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Install
 
@@ -56,9 +48,9 @@ We’re headed to PAX East 3/28-3/31 with new games
 - **youtube_dl**: bool, use Youtube-DL for (high-quality) video extraction. You need to have youtube-dl installed on your environment. Default is False.
 - **post_urls**: list, URLs or post IDs to extract posts from. Alternative to fetching based on username.
 - **cookies**: One of:
-  - The path to a file containing cookies in Netscape or JSON format. You can extract cookies from your browser after logging into Facebook with an extension like [Get cookies.txt LOCALLY](https://swifttechco.com) or [Cookie Quick Manager (Firefox)](https://swifttechco.com). Make sure that you include both the c_user cookie and the xs cookie, you will get an InvalidCookies exception if you don't.
-  - A [CookieJar](https://swifttechco.com)
-  - A dictionary that can be converted to a CookieJar with [cookiejar_from_dict](https://swifttechco.com)
+  - The path to a file containing cookies in Netscape or JSON format. You can extract cookies from your browser after logging into Facebook with an extension like Get cookies.txt LOCALLY or Cookie Quick Manager (Firefox). Make sure that you include both the c_user cookie and the xs cookie, you will get an InvalidCookies exception if you don't.
+  - A CookieJar
+  - A dictionary that can be converted to a CookieJar with cookiejar_from_dict
   - The string `"from_browser"` to try extract Facebook cookies from your browser
 - **options**: Dictionary of options. Set `options={"comments": True}` to extract comments, set `options={"reactors": True}` to extract the people reacting to the post.
 Both `comments` and `reactors` can also be set to a number to set a limit for the amount of comments/reactors to retrieve.
@@ -322,15 +314,15 @@ for i in range(1, 101):
 
 ## Alternatives and related projects
 
-- [facebook-post-scraper](https://swifttechco.com). Has comments. Uses Selenium.
-- [facebook-scraper-selenium](https://swifttechco.com). "Scrape posts from any group or user into a .csv file without needing to register for any API access".
-- [Ultimate Facebook Scraper](https://swifttechco.com).  "Scrapes almost everything about a Facebook user's profile". Uses Selenium.
-- [Unofficial APIs](https://swifttechco.com). List of unofficial APIs for various services, none for Facebook for now, but might be worth to check in the future.
-- [major-scrapy-spiders](https://swifttechco.com). Has a profile spider for Scrapy.
-- [facebook-page-post-scraper](https://swifttechco.com). Seems abandoned.
-- [FBLYZE](https://swifttechco.com). Fork (?).
-- [RSSHub](https://swifttechco.com). Generates an RSS feed from Facebook pages.
-- [RSS-Bridge](https://swifttechco.com). Also generates RSS feeds from Facebook pages.
+- facebook-post-scraper. Has comments. Uses Selenium.
+- facebook-scraper-selenium. "Scrape posts from any group or user into a .csv file without needing to register for any API access".
+- Ultimate Facebook Scraper.  "Scrapes almost everything about a Facebook user's profile". Uses Selenium.
+- Unofficial APIs. List of unofficial APIs for various services, none for Facebook for now, but might be worth to check in the future.
+- major-scrapy-spiders. Has a profile spider for Scrapy.
+- facebook-page-post-scraper. Seems abandoned.
+- FBLYZE. Fork (?).
+- RSSHub. Generates an RSS feed from Facebook pages.
+- RSS-Bridge. Also generates RSS feeds from Facebook pages.
 
 ---
 
@@ -342,14 +334,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [kevinzg/facebook-scraper](https://github.com/kevinzg/facebook-scraper) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
