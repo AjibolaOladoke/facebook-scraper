@@ -6,7 +6,7 @@ A practical reference entry for product and engineering: the facebook-scraper no
 
 ## Images
 
-[![facebook-scraper](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![facebook-scraper](images/preview.png)](https://github.com/Swift-Tech-Co/facebook-scraper)
 
 ## Install
 
@@ -19,7 +19,7 @@ pip install facebook-scraper
 Or, to install the latest master branch:
 
 ```sh
-pip install git+https://swifttechco.com
+pip install git+https://github.com/Swift-Tech-Co/facebook-scraper
 ```
 
 ## Usage
@@ -78,8 +78,8 @@ Download comments for a public Facebook post.
 import facebook_scraper as fs
 
 # get POST_ID from the URL of the post which can have the following structure:
-# https://swifttechco.com
-# https://swifttechco.com
+# https://github.com/Swift-Tech-Co/facebook-scraper
+# https://github.com/Swift-Tech-Co/facebook-scraper
 POST_ID = "pfbid02NsuAiBU9o1ouwBrw1vYAQ7khcVXvz8F8zMvkVat9UJ6uiwdgojgddQRLpXcVBqYbl"
 
 # number of comments to download -- set this to True to download all comments
@@ -116,18 +116,18 @@ for comment in comments:
  'comments_full': None,
  'factcheck': None,
  'fetched_time': datetime.datetime(2021, 4, 20, 13, 39, 53, 651417),
- 'image': 'https://swifttechco.com',
- 'images': ['https://swifttechco.com'],
+ 'image': 'https://github.com/Swift-Tech-Co/facebook-scraper',
+ 'images': ['https://github.com/Swift-Tech-Co/facebook-scraper'],
  'is_live': False,
  'likes': 3509,
- 'link': 'https://swifttechco.com',
+ 'link': 'https://github.com/Swift-Tech-Co/facebook-scraper',
  'post_id': '2257188721032235',
  'post_text': 'Don’t let this diminutive version of the Hero of Time fool you, '
               'Young Link is just as heroic as his fully grown version! Young '
               'Link joins the Super Smash Bros. series of amiibo figures!\n'
               '\n'
-              'https://swifttechco.com',
- 'post_url': 'https://swifttechco.com',
+              'https://github.com/Swift-Tech-Co/facebook-scraper',
+ 'post_url': 'https://github.com/Swift-Tech-Co/facebook-scraper',
  'reactions': {'haha': 22, 'like': 2657, 'love': 706, 'sorry': 1, 'wow': 123}, # if `extra_info` was set
  'reactors': None,
  'shared_post_id': None,
@@ -141,14 +141,14 @@ for comment in comments:
          'Young Link is just as heroic as his fully grown version! Young Link '
          'joins the Super Smash Bros. series of amiibo figures!\n'
          '\n'
-         'https://swifttechco.com',
+         'https://github.com/Swift-Tech-Co/facebook-scraper',
  'time': datetime.datetime(2019, 4, 30, 5, 0, 1),
  'user_id': '119240841493711',
  'username': 'Nintendo',
  'video': None,
  'video_id': None,
  'video_thumbnail': None,
- 'w3_fb_url': 'https://swifttechco.com'}
+ 'w3_fb_url': 'https://github.com/Swift-Tech-Co/facebook-scraper'}
 ```
 
 ### Notes
@@ -157,31 +157,31 @@ for comment in comments:
 - Group posts may be missing some fields like `time` and `post_url`.
 - Group scraping may return only one page and not work on private groups.
 - If you scrape too much, Facebook might temporarily ban your IP.
-- The vast majority of unique IDs on facebook (post IDs, video IDs, photo IDs, comment IDs, profile IDs, etc) can be appended to "https://swifttechco.com" to result in a redirect to the corresponding object.
+- The vast majority of unique IDs on facebook (post IDs, video IDs, photo IDs, comment IDs, profile IDs, etc) can be appended to "https://github.com/Swift-Tech-Co/facebook-scraper" to result in a redirect to the corresponding object.
 - Some functions (such as extracting reactions) require you to be logged into Facebook (pass cookies). If something isn't working as expected, try pass cookies and see if that fixes it.
 - Reaction Categories (EN): [`like`, `love`, `haha`, `sorry`, `wow`, `angry`, `care`]
 
 ## Comment & Reply example
 ```python
 {'comment_id': '1417925635669547', 
- 'comment_url': 'https://swifttechco.com', 
+ 'comment_url': 'https://github.com/Swift-Tech-Co/facebook-scraper', 
  'commenter_id': '100009665948953', 
- 'commenter_url': 'https://swifttechco.com', 
+ 'commenter_url': 'https://github.com/Swift-Tech-Co/facebook-scraper', 
  'commenter_name': 'someone', 
  'commenter_meta': None, 
  'comment_text': 'something', 
  'comment_time': datetime.datetime(2023, 6, 23, 0, 0), 
- 'comment_image': 'https://swifttechco.com', 
+ 'comment_image': 'https://github.com/Swift-Tech-Co/facebook-scraper', 
  'comment_reactors': [
-   {'name': 'Tom', 'link': 'https://swifttechco.com', 'type': 'like'}, 
-   {'name': 'Macy', 'link': 'https://swifttechco.com', 'type': 'like'}],
+   {'name': 'Tom', 'link': 'https://github.com/Swift-Tech-Co/facebook-scraper', 'type': 'like'}, 
+   {'name': 'Macy', 'link': 'https://github.com/Swift-Tech-Co/facebook-scraper', 'type': 'like'}],
  'comment_reactions': {'like': 2}, 
  'comment_reaction_count': 2, 
  'replies': [
    {'comment_id': '793761608817229', 
-    'comment_url': 'https://swifttechco.com', 
+    'comment_url': 'https://github.com/Swift-Tech-Co/facebook-scraper', 
     'commenter_id': '100022377272712', 
-    'commenter_url': 'https://swifttechco.com', 
+    'commenter_url': 'https://github.com/Swift-Tech-Co/facebook-scraper', 
     'commenter_name': 'David', 
     'commenter_meta': None, 
     'comment_text': 'something', 
@@ -193,7 +193,6 @@ for comment in comments:
  ]
 }
 ```
-
 
 ## Profiles
 
@@ -338,13 +337,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/facebook-scraper
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [kevinzg/facebook-scraper](https://github.com/kevinzg/facebook-scraper) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
